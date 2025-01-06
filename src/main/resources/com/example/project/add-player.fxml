@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.AddPlayerController">
+    <children>
+        <GridPane hgap="10" vgap="15" layoutX="50" layoutY="30" prefWidth="650.0">
+            <columnConstraints>
+                <!-- Left column for the "Back" button -->
+                <ColumnConstraints minWidth="80" prefWidth="100" halignment="CENTER"/>
+                <!-- Column for labels (will be narrow) -->
+                <ColumnConstraints minWidth="150" prefWidth="200" halignment="RIGHT"/>
+                <!-- Column for text fields and combo box (main input fields) -->
+                <ColumnConstraints minWidth="150" prefWidth="200" halignment="LEFT"/>
+                <!-- Column for buttons (wide enough for buttons) -->
+                <ColumnConstraints minWidth="150" prefWidth="200" halignment="CENTER"/>
+            </columnConstraints>
+
+            <Label fx:id="playerInfo" text="Input Player Info" GridPane.rowIndex="0" GridPane.columnIndex="1"
+                   style="-fx-font-size: 20"/>
+
+            <!-- Player Name -->
+            <Label fx:id="playerName" text="Name : " GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <TextField fx:id="nameTextField" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+            <Button fx:id="checkValidity" text="Check Validity" onAction="#onCheckValidityButtonClicked"
+                    GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+            <!-- Country -->
+            <Label fx:id="country" text="Country : " GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <TextField fx:id="countryTextField" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+
+            <!-- Age -->
+            <Label fx:id="age" text="Age : " GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            <TextField fx:id="ageTextField" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+
+            <!-- Height -->
+            <Label fx:id="height" text="Height : " GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+            <TextField fx:id="heightTextField" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+
+            <!-- Club -->
+            <Label fx:id="club" text="Club : " GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+            <TextField fx:id="clubTextField" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+
+            <!-- Position -->
+            <Label fx:id="position" text="Position : " GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+            <ComboBox fx:id="positionComboBox" GridPane.rowIndex="6" GridPane.columnIndex="2" prefWidth="175"
+                      promptText="Select Position">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Batsman"/>
+                        <String fx:value="Bowler"/>
+                        <String fx:value="Allrounder"/>
+                        <String fx:value="Wicketkeeper"/>
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <!-- Jersey Number -->
+            <Label fx:id="jerseyNumber" text="Jersey Number : " GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+            <TextField fx:id="jerseyNumberTextField" GridPane.rowIndex="7" GridPane.columnIndex="2"/>
+
+            <!-- Weekly Salary -->
+            <Label fx:id="weeklySalary" text="Weekly Salary : " GridPane.rowIndex="8" GridPane.columnIndex="1"/>
+            <TextField fx:id="weeklySalaryTextField" GridPane.rowIndex="8" GridPane.columnIndex="2"/>
+
+            <!-- Row for Buttons -->
+            <GridPane.rowIndex>8</GridPane.rowIndex>
+            <Button fx:id="backButton" text="Back" onAction="#onBackButtonClicked" GridPane.rowIndex="9"
+                    GridPane.columnIndex="0"/>
+            <Button fx:id="addPlayer" text="Add Player" onAction="#onAddPlayerButtonClicked" GridPane.rowIndex="9"
+                    GridPane.columnIndex="3"/>
+        </GridPane>
+    </children>
+</AnchorPane>

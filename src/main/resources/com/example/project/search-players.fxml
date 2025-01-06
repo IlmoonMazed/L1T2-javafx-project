@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.SearchPlayersController" hgap="10"
+          vgap="10" alignment="CENTER">
+    <columnConstraints>
+        <!-- Left column for the "Back" button -->
+        <ColumnConstraints minWidth="80" prefWidth="100" halignment="LEFT"/>
+        <!-- Column for labels (will be narrow) -->
+        <ColumnConstraints minWidth="180" prefWidth="230" halignment="CENTER"/>
+        <!-- Column for text fields and combo box (main input fields) -->
+        <ColumnConstraints minWidth="100" prefWidth="100" halignment="LEFT"/>
+    </columnConstraints>
+    <!-- Left Column (holds Back button) -->
+    <Button fx:id="backButton" layoutX="20.0" layoutY="350.0" GridPane.rowIndex="6" GridPane.columnIndex="0"
+            mnemonicParsing="false" onAction="#onBackButtonClicked" text="Back"/>
+
+    <!-- Center Column (holds Label and all buttons) -->
+    <!-- Label -->
+    <Label fx:id="searchLabel" layoutX="252.0" layoutY="52.0" scaleX="1.5" scaleY="1.5" text="Search By"
+           GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <!-- Search By Name Button -->
+    <Button fx:id="searchByName" layoutX="253.0" layoutY="96.0" GridPane.rowIndex="1" GridPane.columnIndex="1"
+            mnemonicParsing="false" onAction="#onSearchByNameButtonClicked" text="Name"/>
+
+    <!-- Search By Club & Country Button -->
+    <Button fx:id="searchByClubAndCountry" layoutX="231.0" layoutY="140.0" GridPane.rowIndex="2"
+            GridPane.columnIndex="1" mnemonicParsing="false" onAction="#onSearchByClubAndCountryButtonClicked"
+            text="Club &amp; Country"/>
+
+    <!-- Search By Position Button -->
+    <Button fx:id="searchByPosition" layoutX="248.0" layoutY="187.0" GridPane.rowIndex="3" GridPane.columnIndex="1"
+            mnemonicParsing="false" onAction="#onSearchByPositionButtonClicked" text="Position"/>
+
+    <!-- Search By Salary Range Button -->
+    <Button fx:id="searchBySalaryRange" layoutX="236.0" layoutY="226.0" GridPane.rowIndex="4" GridPane.columnIndex="1"
+            mnemonicParsing="false" onAction="#onSearchBySalaryRangeButtonClicked" text="Salary Range"/>
+
+    <!-- Country-Wise Player Count Button -->
+    <Button fx:id="contryWisePLayerCount" layoutX="212.0" layoutY="275.0" GridPane.rowIndex="5" GridPane.columnIndex="1"
+            mnemonicParsing="false" onAction="#onCountryWisePlayerCountButtonClicked" text="Country-Wise Player Count"/>
+
+    <!-- Right Column (empty) -->
+    <Region GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+    <Region GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+    <Region GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+    <Region GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+    <Region GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+    <Region GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+</GridPane>

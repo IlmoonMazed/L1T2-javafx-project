@@ -1,0 +1,6 @@
+Rassie van der Dussen,South Africa,35,1.87,Rajasthan Royals,Batsman,78,15000000,default-headshot
+Rashid Khan,Afghanistan,26,1.78,Gujarat Titans,Bowler,19,16000000,218
+Rohit Sharma,India,37,1.74,Mumbai Indians,Batsman,45,19000000,6
+Suryakumar Yadav,India,34,1.78,Mumbai Indians,Batsman,63,17000000,174
+Litton Das,Bangladesh,30,1.7,Kolkata Knight Riders,Wicketkeeper,16,10000000,default-headshot
+Pat Cummins,Australia,31,1.92,Sunrisers Hyderabad,Bowler,30,17500000,33

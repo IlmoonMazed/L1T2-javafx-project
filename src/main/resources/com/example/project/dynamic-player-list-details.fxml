@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.project.DynamicPlayerListDetailsController"
+            prefHeight="600.0" prefWidth="800.0">
+
+    <!-- ListView for displaying player details -->
+    <ListView fx:id="playerDetailsListView"
+              layoutX="20.0"
+              layoutY="20.0"
+              prefWidth="760.0"
+              prefHeight="500.0"/>
+
+    <!-- Back Button -->
+    <Button fx:id="backButton"
+            layoutX="20.0"
+            layoutY="540.0"
+            text="Back"
+            onAction="#onBackButtonClicked"/>
+
+</AnchorPane>

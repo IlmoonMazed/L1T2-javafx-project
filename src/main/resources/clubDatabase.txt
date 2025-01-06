@@ -1,0 +1,10 @@
+Royal Challengers Bangalore,RCBpass
+Rajasthan Royals,RRpass
+Gujarat Titans,GTpass
+Chennai Super Kings,CSKpass
+Delhi Capitals,DCpass
+Mumbai Indians,MIpass
+Kolkata Knight Riders,KKRpass
+Lucknow Super Giants,LSGpass
+Punjab Kings,PKpass
+Sunrisers Hyderabad,SRHpass

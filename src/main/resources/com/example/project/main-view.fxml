@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0"
+          xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.example.project.MainController" hgap="10" vgap="10" alignment="CENTER">
+    <children>
+        <!-- Empty row for top space -->
+        <Region GridPane.rowIndex="0"/>
+
+        <!-- Welcome Button -->
+        <Button fx:id="logInButton" onAction="#onLogInButtonClick" text="Log In" GridPane.rowIndex="1"
+                GridPane.halignment="CENTER"/>
+
+        <!-- Search Players Button -->
+        <Button fx:id="searchPLayers" onAction="#onSearchPlayersButtonClick" text="Search Players" GridPane.rowIndex="2"
+                GridPane.halignment="CENTER"/>
+
+        <!-- Search Clubs Button -->
+        <Button fx:id="searchClubs" onAction="#onSearchClubsButtonClick" text="Search Clubs" GridPane.rowIndex="3"
+                GridPane.halignment="CENTER"/>
+
+        <!-- Add Player Button -->
+        <Button fx:id="addPlayer" onAction="#onAddPlayerButtonClick" text="Add Player" GridPane.rowIndex="4"
+                GridPane.halignment="CENTER"/>
+
+        <!-- Exit Button -->
+        <Button fx:id="exit" onAction="#onExitButtonClick" text="Exit" GridPane.rowIndex="5"
+                GridPane.halignment="CENTER"/>
+    </children>
+</GridPane>

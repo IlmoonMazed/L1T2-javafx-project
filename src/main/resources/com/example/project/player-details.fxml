@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.PlayerDetailsController">
+
+    <Label fx:id="playerDetailsLabel" layoutX="50" layoutY="50" text="Player Details" style="-fx-text-fill: white;"/>
+
+    <!-- StackPane for the image container -->
+    <StackPane fx:id="imageContainer" layoutX="350.0" layoutY="20.0" prefWidth="200.0" prefHeight="200.0">
+        <ImageView fx:id="playerImageView" fitWidth="240.0" fitHeight="240.0"/>
+    </StackPane>
+
+    <Button fx:id="backButton" layoutX="53.0" layoutY="328.0" mnemonicParsing="false" onAction="#onBackButtonClicked"
+            text="Back"/>
+</AnchorPane>
