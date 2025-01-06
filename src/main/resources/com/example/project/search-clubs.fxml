@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0"
+          xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.example.project.SearchClubsController" hgap="10" vgap="10" alignment="CENTER">
+    <children>
+
+
+        <!-- Maximum Salary Button -->
+        <Button fx:id="maximumSalary" onAction="#onMaximumSalaryButtonClicked" text="Maximum Salary"
+                GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="CENTER"/>
+
+        <!-- Maximum Age Button -->
+        <Button fx:id="maximumAge" onAction="#onMaximumAgeButtonClicked" text="Maximum Age" GridPane.rowIndex="1"
+                GridPane.columnIndex="0" GridPane.halignment="CENTER"/>
+
+        <!-- Maximum Height Button -->
+        <Button fx:id="maximumHeight" onAction="#onMaximumHeightButtonClicked" text="Maximum Height"
+                GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="CENTER"/>
+
+        <!-- Total Yearly Salary Button -->
+        <Button fx:id="totalYearlysalary" onAction="#onTotalYearlySalaryButtonClicked" text="Total Yearly Salary"
+                GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.halignment="CENTER"/>
+
+        <!-- Back Button -->
+        <Button fx:id="backButton" onAction="#onBackButtonClicked" text="Back" GridPane.rowIndex="4"
+                GridPane.columnIndex="0" GridPane.halignment="CENTER"/>
+    </children>
+</GridPane>

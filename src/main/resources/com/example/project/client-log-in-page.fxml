@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.project.ClientLogInPageController" stylesheets="@styles.css">
+    <!--<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.ClientLogInPageController">-->
+    <children>
+        <Label fx:id="name" layoutX="100" layoutY="120" text="Club Name : "/>
+        <TextField fx:id="clubName" layoutX="200.0" layoutY="120.0" promptText="Club Name"/>
+        <Label fx:id="password" layoutX="110" layoutY="170" text="Password : "/>
+        <PasswordField fx:id="clubPassword" layoutX="200.0" layoutY="170.0" promptText="Password"/>
+        <Button fx:id="logInButton" layoutX="370.0" layoutY="220.0" mnemonicParsing="false"
+                onAction="#logInButtonClicked" text="Log In"/>
+    </children>
+</AnchorPane>

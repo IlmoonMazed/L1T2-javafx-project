@@ -1,0 +1,284 @@
+/* Set background color */
+.root {
+    -fx-background-image: url("images/background.png");
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover; /* Ensures the image covers the entire window */
+}
+
+/* General button styling with gradient */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #0C6F00, #074300); /* Gradient with more contrast */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8 16;
+    -fx-border-radius: 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #062800, 8, 0.5, 0, 2); /* Stronger shadow */
+    -fx-font-weight: bold;
+    -fx-transition: background-color 0.2s, transform 0.2s, -fx-effect 0.2s; /* Smooth transitions */
+}
+
+/* Button hover effect */
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #18A300, #0B4F00); /* Brighter and more vibrant green */
+    -fx-transform: scale(1.1); /* Larger scaling for noticeable effect */
+    -fx-effect: dropshadow(gaussian, #094E00, 12, 0.7, 0, 4); /* Brighter shadow on hover */
+}
+
+/* Button pressed effect */
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #0A3800, #062800); /* Darker and more muted gradient */
+    -fx-transform: scale(0.95); /* Noticeable shrink */
+    -fx-effect: dropshadow(gaussian, #041800, 4, 0.4, 0, 1); /* Subtle shadow on press */
+}
+
+/* Button disabled styling */
+.button:disabled {
+    -fx-background-color: linear-gradient(to bottom, #1E1E1E, #090804);
+    -fx-text-fill: #a3c0cc;
+    -fx-cursor: not-allowed;
+}
+
+
+/* Styling for labels and text in primary color */
+.label {
+    -fx-text-fill: #ffffff; /* White for primary labels */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-stroke: #090804;
+    -fx-effect: dropshadow(gaussian, #071402, 10, 0.7, 3, 3);
+}
+
+/* Input fields (default styling) */
+.text-field {
+    -fx-background-color: rgba(7, 68, 0, 0.8); /* Pakistan green for text fields */
+    -fx-text-fill: #ffffff; /* Light text for text fields */
+    -fx-border-color: #071402; /* Night for borders */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Input fields focus styling */
+.text-field:focused {
+    -fx-border-color: #0C2703; /* Dark green when focused */
+}
+
+/* Combo Box Container */
+.combo-box {
+    -fx-background-color: rgba(7, 68, 0, 0.4); /* Pakistan green background for combo box */
+    -fx-text-fill: #fff; /* Light text for combo box */
+    -fx-font-size: 14px;
+}
+
+/* Combo Box Dropdown */
+.combo-box > .list-cell {
+    -fx-background-color: rgba(7, 68, 0, 0.4); /* Pakistan green for each dropdown option */
+    -fx-text-fill: black; /* Light text for options */
+}
+
+/* Combo Box Dropdown Hover State */
+.combo-box > .list-cell:hover {
+    -fx-background-color: rgba(7, 68, 0, 0.4); /* Cal poly green for options hover */
+    -fx-text-fill: white; /* White text when hovered */
+}
+
+/*!* Combo Box Selected Item *!*/
+/*.combo-box .list-cell:focused {*/
+/*    -fx-background-color: #074300;  !* Pakistan green for selected item *!*/
+/*    -fx-text-fill: white;*/
+/*}*/
+
+/* Scrollbars */
+.scroll-bar {
+    -fx-background-color: #b3ffb3; /* Smoky black */
+    -fx-border-color: #0C2703;
+}
+
+/* Scrollbar thumb */
+.scroll-bar .thumb {
+    -fx-background-color: #0C2703; /* Dark green */
+}
+
+/* Error message box */
+
+
+/* Styling for borders and dividers */
+.divider {
+    -fx-background-color: #0C2703; /* Dark green */
+    -fx-height: 1px;
+    -fx-padding: 10px 0;
+}
+
+/* Enable alternating row colors */
+.table-view {
+    -fx-alternative-row-fill-visible: true; /* Enable alternate row colors */
+    -fx-alternative-row-fill: rgba(109, 186, 109, 0.3); /* Set color for alternating rows */
+    -fx-text-fill: white;
+}
+
+/* Table Header */
+.table-view .column-header {
+    -fx-background-color: #0C2703; /* Dark green for header background */
+    -fx-padding: 5px 5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+/* Table Rows */
+.table-view .table-row-cell {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+/* Apply hover effect to the entire row */
+.table-view .table-row-cell:hover {
+    -fx-background-color: rgba(0, 80, 0, 0.5); /* Indigo dye for hover effect */
+}
+
+/* Apply hover effect to the text inside the row */
+.table-view .table-row-cell:hover .table-cell-text {
+    -fx-text-fill: white; /* Change the text color to white */
+}
+
+/* Row Selected State */
+.table-view .table-row-cell:selected {
+    -fx-background-color: rgba(7, 68, 0, 0.8); /* Pakistan green for selected rows */
+}
+
+.table-view .table-row-cell:selected .table-cell-text {
+    -fx-text-fill: white; /* Change the text color to white */
+}
+
+/* Pie Chart */
+.chart-pie {
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0, 80, 0, 0.99), 15, 0.7, 0, 0);
+}
+
+.chart-pie-label, .data-label {
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-font-size: 12px;
+}
+
+.chart-title {
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-font-size: 16px;
+}
+
+.chart-pie-label-line {
+    -fx-stroke: white;
+    -fx-fill: white;
+}
+
+.chart-legend {
+    -fx-background-color: #00000044;
+    -fx-border-color: #04509b;
+    -fx-padding: 10;
+}
+
+/* Animations */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 80, 0, 0.99);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 96, 0, 0.99);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 135, 0, 0.99);
+    }
+}
+
+/* ListView Container */
+.list-view {
+    -fx-background-color: #090804; /* Smoky black for the background */
+    -fx-padding: 10px; /* Padding around the list */
+    -fx-border-color: #125607; /* Cal poly green border */
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+/* List Items */
+.list-cell {
+    -fx-background-color: rgba(192, 255, 192, 0.8); /* Dark green for list items */
+    -fx-text-fill: black; /* Cal poly green for the text */
+    -fx-font-size: 14px;
+    -fx-padding: 8px 12px; /* Padding inside each item */
+    -fx-font-weight: bold;
+    -fx-border-color: #074300; /* Pakistan green for item borders */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+/* List Item Hover */
+.list-cell:hover {
+    -fx-background-color: rgb(109, 186, 109); /* Pakistan green for hover effect */
+    -fx-text-fill: #ffffff;
+
+}
+
+/* List Item Selected */
+.list-cell:selected {
+    -fx-background-color: #125607; /* Cal poly green for selected item */
+    -fx-text-fill: #ffffff; /* Change text color to white when selected */
+}
+
+.list-cell:selected .text {
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+
+error-message {
+    -fx-background-color: #ffb3b3;
+    -fx-text-fill: #ff0000;
+    -fx-padding: 15px;
+    -fx-border-radius: 8px;
+}
+
+/* Success message box */
+.success-message {
+    -fx-background-color: #b3ffb3;
+    -fx-text-fill: #008000;
+    -fx-padding: 15px;
+    -fx-border-radius: 8px;
+}
+
+.error {
+    -fx-background-color: rgb(255, 179, 179);
+}
+
+.error > *.button-bar > *.container {
+    -fx-background-color: rgba(255, 179, 179, 0.5);
+}
+
+.error:header *.header-panel {
+    -fx-background-color: rgba(255, 179, 179, 0.5);
+}
+
+.error:header *.header-panel *.label {
+    -fx-font-size: 18px;
+    -fx-fill: #ff0000;
+}
+
+.success > *.button-bar > *.container {
+    -fx-background-color: rgba(179, 255, 179, 0.5);
+}
+
+.success:header *.header-panel {
+    -fx-background-color: rgba(179, 255, 179, 0.5);
+}
+
+
+
+
+
+
+
+
+
+

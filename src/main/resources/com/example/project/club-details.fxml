@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.ClubDetailsController">
+
+    <Label fx:id="clubDetailsLabel" layoutX="70" layoutY="50" text="Club Details" style="-fx-text-fill: white; "/>
+    <PieChart fx:id="pieChart" layoutX="180.0" layoutY="180.0" prefHeight="200.0" prefWidth="300.0"
+              style="-fx-text-fill: rgba(0,80,0,0.99); -fx-font-weight: bold; -fx-stroke: #090804; -fx-effect: dropshadow(gaussian, #071402, 10, 0.7, 3, 3); "/>
+    <Button fx:id="backButton" layoutX="30.0" layoutY="320.0" mnemonicParsing="false" onAction="#onBackButtonClicked"
+            text="Back"/>
+</AnchorPane>

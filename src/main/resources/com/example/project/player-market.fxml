@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.PlayerMarketController" spacing="10"
+      alignment="TOP_LEFT" prefHeight="600.0" prefWidth="800.0">
+    <children>
+        <!-- Table for Player Market -->
+        <TableView fx:id="playerTable" prefHeight="500.0" prefWidth="800.0">
+            <columns>
+                <!-- Player Name Column -->
+                <TableColumn fx:id="playerColumn" text="Player" prefWidth="200.0"/>
+
+                <!-- Club Column -->
+                <TableColumn fx:id="clubColumn" text="Club" prefWidth="200.0"/>
+
+                <!-- Position Column -->
+                <TableColumn fx:id="positionColumn" text="Position" prefWidth="200.0"/>
+
+                <!-- Action Column (Buy, Details buttons) -->
+                <TableColumn fx:id="actionColumn" text="Actions" prefWidth="200.0"/>
+            </columns>
+        </TableView>
+
+        <!-- Spacer to add some space between the TableView and the Back Button -->
+        <VBox spacing="10"/>
+
+        <!-- Back Button -->
+        <Button fx:id="backButton" text="Back" onAction="#onBackButtonClicked" prefWidth="200.0" alignment="CENTER"/>
+    </children>
+</VBox>
